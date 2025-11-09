@@ -75,3 +75,26 @@ site["google"]="www.google.com"
 site["runoob"]="www.runoob.com"
 site["taobao"]="www.taobao.com"
 ```
+printf
+-%s：字符串
+-%d：十进制整数
+-%f：浮点数
+-%c：字符
+-%x：十六进制数
+-%o：八进制数
+-%b：二进制数
+-%e：科学计数法表示的浮点数
+```bash
+# 整数
+printf "Decimal: %d\nHex: %x\nOctal: %o\n" 255 255 255
+
+# 浮点数
+printf "Float: %f\nScientific: %e\n" 3.14159 3.14159
+
+# 字符串
+printf "Name: %s\n" "Bob"
+
+# 字符
+printf "First letter: %c\n" "A"
+
+```
