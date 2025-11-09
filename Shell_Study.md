@@ -65,7 +65,7 @@ Shell 传递参数实例！
 传递的参数作为一个字符串显示：1 2 3
 
 ```
--Bash 支持关联数组，可以使用任意的字符串、或者整数作为下标来访问数组元素。
+-Bash 支持关联数组，可以使用任意的字符串、或者整数作为下标来访问数组元素。  
 关联数组使用 declare 命令来声明，语法格式如下：
 ```bash
 declare -A site=(["google"]="www.google.com" ["runoob"]="www.runoob.com" ["taobao"]="www.taobao.com")
@@ -76,14 +76,14 @@ site["runoob"]="www.runoob.com"
 site["taobao"]="www.taobao.com"
 ```
 printf
--%s：字符串
--%d：十进制整数
--%f：浮点数
--%c：字符
--%x：十六进制数
--%o：八进制数
--%b：二进制数
--%e：科学计数法表示的浮点数
+- %s：字符串
+- %d：十进制整数
+- %f：浮点数
+- %c：字符
+- %x：十六进制数
+- %o：八进制数
+- %b：二进制数
+- %e：科学计数法表示的浮点数
 ```bash
 # 整数
 printf "Decimal: %d\nHex: %x\nOctal: %o\n" 255 255 255
@@ -97,4 +97,17 @@ printf "Name: %s\n" "Bob"
 # 字符
 printf "First letter: %c\n" "A"
 
+```
+*控制流程:*
+-if
+```bash
+if condition
+then
+    command1 
+    command2
+    ...
+    commandN
+else
+    command
+fi
 ```
