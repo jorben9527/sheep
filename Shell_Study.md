@@ -75,7 +75,20 @@ site["google"]="www.google.com"
 site["runoob"]="www.runoob.com"
 site["taobao"]="www.taobao.com"
 ```
-printf
+test 判断工具  *注意方括号内必须有空格*
+|操作符|描述|示例|
+|---|---|---|
+|-e|文件是否存在|	[ -e file.txt ]|
+|-f	|是普通文件|[ -f /path/to/file ]|
+|-d|是目录|[ -d /path/to/dir ]|
+|-r|可读|[ -r file.txt ]|
+|-w|可写|[ -w file.txt ]|
+|-x|可执行|	[ -x script.sh ]|
+|-s|文件大小 >0|[ -s logfile ]|
+|-L|是符号链接|[ -L symlink ]|
+
+
+printf：
 - %s：字符串
 - %d：十进制整数
 - %f：浮点数
@@ -101,13 +114,14 @@ printf "First letter: %c\n" "A"
 *控制流程:*
 -if
 ```bash
-if condition
+if condition1
 then
-    command1 
+    command1
+elif condition2 
+then 
     command2
-    ...
-    commandN
 else
-    command
+    commandN
 fi
+
 ```
